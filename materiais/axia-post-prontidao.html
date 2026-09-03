@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Estrutura Antes de Escalar</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;900&family=IBM+Plex+Sans:wght@400;500;600&display=swap');
+
+  :root{
+    --bg-outer:#050506;
+    --card-bg:#0A0A0A;
+    --text-primary:#FFFFFF;
+    --text-secondary:#CFCFCF;
+    --text-tertiary:#8A8A8A;
+    --line:rgba(255,255,255,0.16);
+  }
+
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--bg-outer);
+    color:var(--text-primary);
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:18px;
+    padding:32px 16px;
+    font-family:'IBM Plex Sans', system-ui, sans-serif;
+  }
+
+  .stage-label{
+    font-size:12px;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--text-tertiary);
+    text-align:center;
+  }
+
+  .card{
+    width:min(92vmin, 620px);
+    aspect-ratio:1/1;
+    background:var(--card-bg);
+    border:1px solid rgba(255,255,255,0.06);
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    padding:6.2% 7.4%;
+    position:relative;
+    overflow:hidden;
+  }
+
+  .mark-row{
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+
+  .a-mark{
+    width:22px;
+    height:22px;
+    flex:none;
+  }
+
+  .wordmark{
+    font-family:'Archivo', system-ui, sans-serif;
+    font-weight:700;
+    font-size:15px;
+    letter-spacing:.16em;
+    color:var(--text-primary);
+  }
+
+  .wordmark sup{
+    font-size:9px;
+    letter-spacing:0;
+  }
+
+  .hero{
+    display:flex;
+    flex-direction:column;
+    gap:22px;
+  }
+
+  .caps{
+    font-family:'Archivo', system-ui, sans-serif;
+    font-weight:900;
+    font-size:clamp(26px, 6.6vmin, 42px);
+    line-height:1.14;
+    letter-spacing:-0.01em;
+    text-transform:uppercase;
+    text-wrap:balance;
+    color:var(--text-primary);
+    max-width:11ch;
+  }
+
+  .rule{
+    width:56px;
+    height:2px;
+    background:var(--text-primary);
+  }
+
+  .tagline{
+    font-family:'IBM Plex Sans', system-ui, sans-serif;
+    font-weight:400;
+    font-size:clamp(13px, 2.1vmin, 16px);
+    line-height:1.5;
+    color:var(--text-secondary);
+    max-width:30ch;
+  }
+
+  .footer{
+    display:flex;
+    align-items:flex-end;
+    justify-content:space-between;
+    gap:16px;
+    border-top:1px solid var(--line);
+    padding-top:5%;
+  }
+
+  .cta-pill{
+    border:1px solid rgba(255,255,255,0.5);
+    padding:8px 14px;
+    font-family:'IBM Plex Sans', system-ui, sans-serif;
+    font-weight:500;
+    font-size:clamp(10px, 1.7vmin, 13px);
+    letter-spacing:.03em;
+    color:var(--text-primary);
+    white-space:nowrap;
+  }
+
+  .cta-pill b{
+    font-weight:600;
+  }
+
+  .footer-caption{
+    font-family:'IBM Plex Sans', system-ui, sans-serif;
+    font-size:clamp(9px, 1.4vmin, 11px);
+    letter-spacing:.05em;
+    color:var(--text-tertiary);
+    text-align:right;
+    line-height:1.4;
+  }
+
+  .caption{
+    font-size:12px;
+    color:var(--text-tertiary);
+    text-align:center;
+    max-width:420px;
+    line-height:1.5;
+  }
+</style>
+</head>
+<body>
+
+<div class="stage-label">Material · Post LinkedIn — AXIA · 1080 × 1080</div>
+
+<div class="card">
+  <div class="mark-row">
+    <svg class="a-mark" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 2 L22 22 H16.5 L12 12.5 L7.5 22 H2 Z" fill="#FFFFFF"/>
+    </svg>
+    <div class="wordmark">AXIA<sup>®</sup></div>
+  </div>
+
+  <div class="hero">
+    <div class="caps">Exportar não é sorte de feira. É estrutura comercial contínua.</div>
+    <div class="rule"></div>
+    <div class="tagline">Estruturar antes de escalar. É assim que internacionalização vira receita recorrente, não sorte pontual.</div>
+  </div>
+
+  <div class="footer">
+    <div class="cta-pill">Comenta <b>"PRONTIDÃO"</b></div>
+    <div class="footer-caption">International Growth<br>&amp; Export Strategy</div>
+  </div>
+</div>
+
+<div class="caption">Modelo A — identidade visual provisória da AXIA (preto/branco, minimalista). Exporte via captura de tela em 1080×1080 para publicar.</div>
+
+</body>
+</html>
